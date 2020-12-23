@@ -3,7 +3,7 @@ curl=no
 
 ifneq ($(curl),no)
 	flags=-DUSE_CURL -lcurl
-	LDFLAGS="-R/usr/local/lib -L/usr/local/lib"
+	LDFLAGS=-R/usr/local/lib -L/usr/local/lib
 else
 	flags=
 	LDFLAGS=
